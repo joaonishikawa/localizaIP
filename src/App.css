@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.Buscar {
+  background-color: #3e3e3e;
+  border: 2px solid rgb(141, 0, 235);
+  border-radius: 10px;
+  color: white;
+  width: 70px;
+  height: 35px;
+}
+
+.UserIP {
+  color: rgb(141, 0, 235);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.Buscar:hover {
+  background-color: #282c34;
+  cursor: pointer;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: rgb(255, 253, 253);
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border: solid 2px rgb(141, 0, 235);
+  transform: scale(0.8);      /* Inicialmente, a escala do modal será menor */
+  opacity: 0;                 /* E sua opacidade será 0 (invisível) */
+  transition: transform 0.3s, opacity 0.3s; /* Define a duração da animação */
+}
+
+.modal-content.show {
+  transform: scale(1);   /* Ao receber a classe 'show', a escala será 1 (tamanho normal) */
+  opacity: 1;           /* E sua opacidade será 1 (totalmente visível) */
+}
+
+.closeModal {
+  background-color: rgb(255, 253, 253);
+  border: 2px solid #282c34;
+  border-radius: 10px;
+}
+
+.closeModal:hover {
+  cursor:pointer ;
+  background-color: #b4b4b4;
+}
