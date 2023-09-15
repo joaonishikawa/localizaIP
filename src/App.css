@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .Buscar {
   background-color: #3e3e3e;
   border: 2px solid rgb(141, 0, 235);
@@ -38,9 +33,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 .modal-overlay {
   position: fixed;

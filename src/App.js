@@ -1,6 +1,5 @@
 // Importando os pacotes e arquivos necessários
 import React, { useState, useEffect } from 'react';  // Adicionado o useEffect para efeitos colaterais
-import logo from './logo.svg';
 import axios from 'axios';
 import './App.css';
 
